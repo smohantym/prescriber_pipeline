@@ -1,0 +1,5 @@
+delete_hdfs_output.ksh Started: Sat May 25 09:22:46 UTC 2024
+The HDFS output directory prescriber_pipeline/output/dimension_city is available. Deleting...
+Deleted prescriber_pipeline/output/dimension_city
+The HDFS output directory prescriber_pipeline/output/dimension_city is deleted
+delete_hdfs_output.ksh Completed: Sat May 25 09:22:53 UTC 2024

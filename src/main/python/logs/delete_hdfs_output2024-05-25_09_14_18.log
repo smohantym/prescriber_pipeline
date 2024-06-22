@@ -1,0 +1,4 @@
+delete_hdfs_output.ksh Started: Sat May 25 09:14:18 UTC 2024
+./delete_hdfs_output.ksh: line 25: [: ===: binary operator expected
+./delete_hdfs_output.ksh: line 35: [: ===: binary operator expected
+delete_hdfs_output.ksh Completed: Sat May 25 09:14:23 UTC 2024

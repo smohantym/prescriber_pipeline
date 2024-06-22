@@ -1,0 +1,4 @@
+hdfs_to_local.ksh Started: Sat May 25 18:48:39 UTC 2024
+get: `prescriber_pipeline/output/dimension_city/*': No such file or directory
+get: `prescriber_pipeline/output/fact/*': No such file or directory
+hdfs_to_local.ksh is Completed: Sat May 25 18:48:44 UTC 2024

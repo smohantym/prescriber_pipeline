@@ -1,0 +1,6 @@
+local_to_s3.ksh Started: Sat May 25 10:37:24 UTC 2024
+Completed 1.7 KiB/1.7 KiB (9.0 KiB/s) with 1 file(s) remainingupload: ../output/dimension_city/part-00000-aba4cdc9-3641-4d2d-8dff-7b4d28b5d805-c000.json.bz2 to s3://prescriber-pipeline/dimension_city/part-00000-aba4cdc9-3641-4d2d-8dff-7b4d28b5d805-c000.json.bz2
+city file /home/sandeepmohantym3003/data_lab/prescriber_pipeline/src/main/python/output/dimension_city/part-00000-aba4cdc9-3641-4d2d-8dff-7b4d28b5d805-c000.json.bz2 is pushed to s3
+Completed 2.4 KiB/2.4 KiB (13.7 KiB/s) with 1 file(s) remainingupload: ../output/fact/part-00000-6f11a003-f16b-45fc-9789-68819aacc6f3-c000.snappy.orc to s3://prescriber-pipeline/precriber/part-00000-6f11a003-f16b-45fc-9789-68819aacc6f3-c000.snappy.orc
+prescriber file /home/sandeepmohantym3003/data_lab/prescriber_pipeline/src/main/python/output/fact/part-00000-6f11a003-f16b-45fc-9789-68819aacc6f3-c000.snappy.orc is pushed to s3
+local_to_s3.ksh is Completed: Sat May 25 10:37:26 UTC 2024

@@ -1,0 +1,47 @@
+"25-May-24 20:28:56" - root - INFO - ...Execution Started...
+"25-May-24 20:28:56" - root - INFO - ...Pipeline Started...
+"25-May-24 20:28:56" - fetch_objects - INFO - sparkObject() started. The Environment: PROD is being used
+"25-May-24 20:29:22" - root - INFO - Spark Object Created
+"25-May-24 20:29:25" - data_ingest - INFO - ...loadFiles() Started...
+"25-May-24 20:29:33" - data_ingest - INFO - Input file prescriber_pipeline/staging/dimension_city loaded to Data Frame.
+"25-May-24 20:29:35" - data_ingest - INFO - ...loadFiles() Started...
+"25-May-24 20:29:41" - data_ingest - INFO - Input file prescriber_pipeline/staging/fact loaded to Data Frame.
+"25-May-24 20:29:41" - data_preprocessing - INFO - selectData() Started.
+"25-May-24 20:29:41" - data_preprocessing - INFO - selectData() Completed.
+"25-May-24 20:29:41" - data_preprocessing - INFO - performDataCleaning() Started.
+"25-May-24 20:29:41" - data_preprocessing - INFO - performDataCleaning() data selection Started.
+"25-May-24 20:29:41" - data_preprocessing - INFO - performDataCleaning() adding country name.
+"25-May-24 20:29:41" - data_preprocessing - INFO - performDataCleaning() refactoring year_of_exp.
+"25-May-24 20:29:41" - data_preprocessing - INFO - performDataCleaning() concat fname & lname.
+"25-May-24 20:29:41" - data_preprocessing - INFO - performDataCleaning() cleaning None or NaN values.
+"25-May-24 20:29:47" - data_preprocessing - INFO - performDataCleaning() imputing trx_cnt where it is null on avg of trx_cnt of that prescriber.
+"25-May-24 20:29:52" - data_preprocessing - INFO - performDataCleaning() Completed.
+"25-May-24 20:29:52" - data_transform - INFO - Transform cityreport() started.
+"25-May-24 20:29:53" - data_transform - INFO - Transform cityreport() completed.
+"25-May-24 20:29:53" - data_transform - INFO - Transform topStatePrescribers() started.
+"25-May-24 20:29:53" - data_transform - INFO - Transform topStatePrescribers() completed.
+"25-May-24 20:29:53" - validations - INFO - ...dfTop10record() started for Dataframe dfTopStatePrescriber...
+"25-May-24 20:29:53" - validations - INFO - ...The Dataframe for top 10 records are:...
+"25-May-24 20:29:54" - validations - INFO - 
+ 	  presc_id   presc_fullname presc_state country_name  years_of_exp  trx_cnt  total_day_supply  total_drug_cost
+1033436191        ROY BARCO          AL          USA            23    661.0             37465          4144.77
+1346399607        NATHAN HO          CA          USA            28     21.0               374           682.03
+1619073848    SHINGSAN CHOU          CA          USA            20     18.0               900           893.07
+1992766604     JOSE CACERES          CA          USA            26     16.0               205          4152.07
+1033120787  CHARLES ANANIAN          CA          USA            28     15.0               540          6541.32
+1588696223         TU HOANG          CA          USA            21     14.0               820           127.96
+1962701417  MADISON PADDOCK          DC          USA            22     35.0              1100           359.42
+1396968145     BEVERLY CASH          FL          USA            21     12.0               360            78.08
+1376579706         TZE CHAN          IA          USA            28     16.0               480           402.17
+1356352116 SUSANNAH FRIEMEL          IA          USA            30     11.0               330           200.23
+"25-May-24 20:29:54" - validations - INFO - The Dataframe validation for top 10 records is completed.
+"25-May-24 20:29:55" - data_extraction - INFO - extractFiles() started.
+"25-May-24 20:30:01" - data_extraction - INFO - Extraction extractFiles() Completed.
+"25-May-24 20:30:01" - data_extraction - INFO - extractFiles() started.
+"25-May-24 20:30:02" - data_extraction - INFO - Extraction extractFiles() Completed.
+"25-May-24 20:30:02" - data_persist - INFO - Data Persist into postgres using data_persist_postgres() for dataframedfCityFact
+"25-May-24 20:30:07" - data_persist - INFO - Data Persist into postgres using data_persist_postgres() for dataframedfCityFactis completed.
+"25-May-24 20:30:07" - data_persist - INFO - Data Persist into postgres using data_persist_postgres() for dataframedfTopStatePrescriber
+"25-May-24 20:30:08" - data_persist - INFO - Data Persist into postgres using data_persist_postgres() for dataframedfTopStatePrescriberis completed.
+"25-May-24 20:30:08" - root - INFO - ...Pipeline Completed...
+"25-May-24 20:30:08" - root - INFO - ...Execution Completed...
